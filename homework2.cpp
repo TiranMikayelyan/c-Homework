@@ -23,7 +23,6 @@ int main() {
         else
             b ^= arr[i]; 
     }
-
     std::cout << "Arajin chkrknvox: " << a << std::endl;
     std::cout << "Erkrord chkrknvox: " << b << std::endl;
 }
