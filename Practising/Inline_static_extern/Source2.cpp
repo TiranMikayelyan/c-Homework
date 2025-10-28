@@ -9,6 +9,7 @@ int main() {
 	std::cout << "b ="<<b << std::endl;
 	sayHi();
 	barev();
+	counter();
 	main1();
 }
 
@@ -19,4 +20,9 @@ void greeting() {
 
 static void sayHi() {    // միայն այս ֆայլում հասանելի
 	std::cout << "Hi from Source2!" << std::endl;
+}
+
+static void counter() {
+	c--;
+	std::cout << "c this = " << c << std::endl;
 }
