@@ -9,10 +9,16 @@ int main1() {
 	//std::cout << "b then ="<<b << std::endl;
 	greeting();
 	sayHi();
+	counter();
 	barev();
 	return 0;
 }
 
 static void sayHi() {    // միայն այս ֆայլում հասանելի
 	std::cout << "Hi from Source1!" << std::endl;
+}
+
+static void counter() {
+	c++;
+	std::cout << "c=" << c << std::endl;
 }
