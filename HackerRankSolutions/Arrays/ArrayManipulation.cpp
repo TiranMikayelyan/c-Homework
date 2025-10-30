@@ -1,13 +1,14 @@
 long arrayManipulation(int n, vector<vector<int>> queries) {
  vector<long> arr(n+2, 0); 
 
-    for (auto &q : queries) {
-        int a = q[0];
-        int b = q[1];
-        int k = q[2];
-        arr[a] += k;
-        arr[b+1] -= k;
-    }
+   for (int i = 0; i < queries.size(); i++) {
+    int a = queries[i][0];
+    int b = queries[i][1];
+    int k = queries[i][2];
+    arr[a] += k;
+    arr[b + 1] -= k;
+}
+
 
     long max_val = 0;
     long current = 0;
