@@ -10,7 +10,7 @@ DoublyLinkedListNode* sortedInsert(DoublyLinkedListNode* llist, int data) {
     }
 
     DoublyLinkedListNode* current = llist;
-    while (current->next && current->data < data) {
+    while (current->next && current->data < data) { // qani der current null chi, u curenti arjeqy poqra nermucvoxic anci araj
         current = current->next;
     }
 
@@ -27,4 +27,5 @@ DoublyLinkedListNode* sortedInsert(DoublyLinkedListNode* llist, int data) {
     }
 
     return llist;
+
 }
