@@ -5,7 +5,7 @@ struct Node {
     Node* prev;
     Node* next;
 
-    Node(int value) {
+    Node(int value) {            //Կոնստրուկտոր
         data = value;
         prev = nullptr;
         next = nullptr;
@@ -20,13 +20,13 @@ private:
 
 public:
     List() {
-        head = nullptr;
+        head = nullptr;    //դատարկ լիստ
         tail = nullptr;
         size = 0;
     }
 
     ~List() {
-        while (head) {
+        while (head) {        // եթե null չի ջնջում է
             pop_front();
         }
     }
@@ -34,7 +34,7 @@ public:
     void push_back(int value) {
         Node* newNode = new Node(value);
         if (!tail) {
-            head = tail = newNode;
+            head = tail = newNode;   //եթե null 1 սկիզբն ու վերջը դրվում են նոր արժեքի վրա
         }
         else {
             tail->next = newNode;
