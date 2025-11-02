@@ -12,3 +12,12 @@ inline void barev() {
 }
 static inline int c=5;
 extern void counter();
+
+
+static int t = 888;
+
+inline int& get_a() // c++ 17-ից ցածր վերսիաների համար inline փոփոխական ստանալ;
+{
+	return t;
+
+}
