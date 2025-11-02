@@ -11,6 +11,8 @@ int main() {
 	barev();
 	counter();
 	main1();
+	std::cout<<get_a();
+
 }
 
 void greeting() {
